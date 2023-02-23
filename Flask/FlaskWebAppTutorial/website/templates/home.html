@@ -1,16 +1,26 @@
 {% extends "base.html" %}
 
+
+
 {% block title %}
-Home
+
+    Home
+
 {% endblock %}
 
+
+
 {% block content %}
-<h1>Home</h1>
-<p>This is the Home page.</p>
-<p>From {{ author + "." }}</p>
-{% if boolean == True %}
-You are signed in.
-{% else %}
-You are not signed in.
-{% endif %}
+
+    <h1>Home</h1>
+
+    <p>This is the Home page.</p>
+    <p>From {{ author + "." }}</p>
+
+    {% if isSignedUp == True %}
+        You are signed in.
+    {% else %}
+        You are not signed in.
+    {% endif %}
+
 {% endblock %}

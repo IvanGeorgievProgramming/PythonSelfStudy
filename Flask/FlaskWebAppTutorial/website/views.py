@@ -4,4 +4,4 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-    return render_template("home.html", author = "Ivan Georgiev", boolean=False)
+    return render_template("home.html", author = "Ivan Georgiev", isSignedUp = False)
